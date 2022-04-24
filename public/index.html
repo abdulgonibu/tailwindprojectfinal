@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevHunt | Online Course </title>
+
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="./css/font-awesome/css/all.min.css">
+
+    <!-- slick css -->
+    <link rel="stylesheet" href="./vendors/slick/slick.css">
+    <link rel="stylesheet" href="./vendors/slick/slick-theme.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,200;1,300;1,400&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="font-poppins text-gray-800">
+    <!-- navbar start -->
+    <nav class="bg-white shadow p-2.5 sticky top-0 z-50">
+        <div class="container mx-auto">
+            <div class="flex justify-between">
+                <div class="flex justify-center items-center">
+                    <a href="index.html">
+                        <img src="./images/logo.png" class="w-36" alt="">
+                    </a>
+                    <div class="ml-8">
+                        <img src="./images/icons/category-icon.svg" alt="" class="w-8 h-8 cursor-pointer">
+                    </div>
+                    <div class="ml-16 relative">
+                        <span class="absolute top-2.5 left-4">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                        <input type="search" name="" id=""
+                            class="outline none outline-1 pl-12 focus:outline-red-300 transition w-full rounded-md text-xs p-3 bg-slate-100"
+                            placeholder="Search for Tuts, Videos, Tutors etc..">
+                    </div>
+                </div>
+                <div class="flex justify-center items-center">
+                    <ul class="list-none">
+                        <li class="inline-block mx-6 relative group">
+                            <a href="" class="text-xl text-gray-500  group-hover:opacity-75">
+                                <span class="bg-red-500 absolute -top-2 -right-3.5 rounded-full w-5 h-5 text-white text-sm text-center 
+                                ">
+                                    2
+                                </span>
+                                <i class="fa-solid fa-cart-arrow-down"></i>
+                            </a>
+                        </li>
+                        <li class="inline-block mx-6 relative group">
+                            <a href="" class="text-xl text-gray-500  group-hover:opacity-75">
+                                <span class="bg-red-500 absolute -top-2 -right-3.5 rounded-full w-5 h-5 text-white text-sm text-center 
+                                ">
+                                    2
+                                </span>
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                        </li>
+                        <li class="inline-block mx-6 relative group">
+                            <a href="" class="text-xl text-gray-500  group-hover:opacity-75">
+                                <span class="bg-red-500 absolute -top-2 -right-3.5 rounded-full w-5 h-5 text-white text-sm text-center 
+                                ">
+                                    2
+                                </span>
+                                <i class="fa-solid fa-bell"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="mx-3 group">
+                        <a href=""
+                            class="text-xl group-hover:opacity-75 text-gray-500 w-5 h-5 shadow-md rounded-full py-1 px-2">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End navbar -->
+
+    <!-- header/hero section start -->
+    <header class="bg-[#DEF6FD] mt-2 rounded-md">
+        <div class="container mx-auto py-40 bg-hero bg-contain bg-no-repeat bg-[right_0px_top_10px]">
+            <h2 class="font-semibold text-4xl">
+                Online Course
+            </h2>
+            <p class="text-gray-500 my-3">
+                For only course, you need to learn Web Development
+            </p>
+            <form action="" method="get" class="mt-4">
+                <div class="flex bg-white items-center p-4">
+                    <div class="basis-3/6">
+                        <span>
+                            <i class="fa-solid fa-magnifying-glass text-slate-300"></i>
+                        </span>
+                        <input type="search" name="" id="" class="ml-16 outline-none focus:outline-none font-thin"
+                            placeholder="Search online courses">
+                    </div>
+                    <div class="basis-2/6 flex">
+                        <div>
+                            <i class="fa-solid fa-cube text-gray-400 mr-2"></i>
+                        </div>
+                        <div class="flex">
+                            <select name="category" id="category_id" class="bg-white text-gray-400 font-thin w-full">
+                                <option value="">Select Technology</option>
+                                <option value="">Bootstrap</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="basis-1/6">
+                        <button
+                            class="transition bg-red-500 text-white px-8 hover:opacity-75 rounded-full p-3  w-full ml-3">
+                            Search
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <p class="mt-6 text-gray-600">
+                <strong>
+                    Polular Search:
+                </strong>
+                <span class="text-gray-400 ml-2">Desinger, Php, Laravel</span>
+            </p>
+        </div>
+    </header>
+    <!-- End header -->
+
+    <!-- categories start -->
+    <section id="categories" class="mt-12">
+        <div class="container mx-auto">
+            <h2 class="font-medium my-5">Browse categories</h2>
+            <div class="flex flex-row gap-2 items-center text-center">
+                <div
+                    class="transition basis-[12.5%] bg-[#fcf1eb] items-center cursor-pointer rounded mr-3 p-3 hover:opacity-75 group">
+                    <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2.5 scale-90 group-hover:scale-125">
+                        <img src="/public/images/icons/bootstrap.png" class="w-16 h-16" alt="" srcset="">
+                    </div>
+                    <h4 class="mt-4 mb-2 uppercase">Bootstrap</h4>
+                    <p class="text-xs text-gray-500">32 Course</p>
+
+
+                </div>
+                <!-- </div> End Single Categories -->
+                <div
+                    class="transition basis-[12.5%] bg-[#fef9ec] items-center cursor-pointer rounded mr-3 p-3 hover:opacity-75 group">
+                    <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2.5 scale-90 group-hover:scale-125">
+                        <img src="/public/images/icons/html.png" class="w-16 h-16" alt="" srcset="">
+                    </div>
+                    <h4 class="mt-4 mb-2 uppercase">Html</h4>
+                    <p class="text-xs text-gray-500">32 Course</p>
+
+
+                </div>
+                <!-- </div> End Single Categories -->
+                <div
+                    class="transition basis-[12.5%] bg-[#e4f4fb] items-center cursor-pointer rounded mr-3 p-3 hover:opacity-75 group">
+                    <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2.5 scale-90 group-hover:scale-125">
+                        <img src="/public/images/icons/jquery.png" class="w-16 h-16" alt="" srcset="">
+                    </div>
+                    <h4 class="mt-4 mb-2 uppercase">JQuery</h4>
+                    <p class="text-xs text-gray-500">32 Course</p>
+
+
+                </div>
+                <!-- </div> End Single Categories -->
+                <div
+                    class="transition basis-[12.5%] bg-[#dbf4f7] items-center cursor-pointer rounded mr-3 p-3 hover:opacity-75 group">
+                    <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2.5 scale-90 group-hover:scale-125">
+                        <img src="/public/images/icons/sass.png" class="w-16 h-16" alt="" srcset="">
+                    </div>
+                    <h4 class="mt-4 mb-2 uppercase">Sass</h4>
+                    <p class="text-xs text-gray-500">32 Course</p>
+
+
+                </div>
+                <!-- </div> End Single Categories -->
+                <div
+                    class="transition basis-[12.5%] bg-[#fcf1eb] items-center cursor-pointer rounded mr-3 p-3 hover:opacity-75 group">
+                    <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2.5 scale-90 group-hover:scale-125">
+                        <img src="/public/images/icons/react.png" class="w-16 h-16" alt="" srcset="">
+                    </div>
+                    <h4 class="mt-4 mb-2">React</h4>
+                    <p class="text-xs text-gray-500">32 Course</p>
+
+
+                </div>
+                <!-- </div> End Single Categories -->
+                <div
+                    class="transition basis-[12.5%] bg-[#fef9ec] items-center cursor-pointer rounded mr-3 p-3 hover:opacity-75 group">
+                    <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2.5 scale-90 group-hover:scale-125">
+                        <img src="/public/images/icons/java.png" class="w-16 h-16" alt="" srcset="">
+                    </div>
+                    <h4 class="mt-4 mb-2">Java</h4>
+                    <p class="text-xs text-gray-500">32 Course</p>
+
+
+                </div>
+                <!-- </div> End Single Categories -->
+                <div
+                    class="transition basis-[12.5%] bg-[#e4f4fb] items-center cursor-pointer rounded mr-3 p-3 hover:opacity-75 group">
+                    <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2.5 scale-90 group-hover:scale-125">
+                        <img src="/public/images/icons/python.png" class="w-16 h-16" alt="" srcset="">
+                    </div>
+                    <h4 class="mt-4 mb-2">Python</h4>
+                    <p class="text-xs text-gray-500">32 Course</p>
+
+
+                </div>
+                <!-- </div> End Single Categories -->
+                <div
+                    class="transition basis-[12.5%] bg-[#fcf1eb] items-center cursor-pointer rounded mr-3 p-3 hover:opacity-75 group">
+                    <div class="bg-white rounded-full m-0 mx-auto w-20 h-20 p-2.5 scale-90 group-hover:scale-125">
+                        <img src="/public/images/icons/mongodb.png" class="w-16 h-16" alt="" srcset="">
+                    </div>
+                    <h4 class="mt-4 mb-2">mongodb</h4>
+                    <p class="text-xs text-gray-500">32 Course</p>
+
+
+                </div>
+                <!-- </div> End Single Categories -->
+            </div>
+    </section>
+    <!-- End categories -->
+
+    <!-- polular course start -->
+    <section id="courses" class="mt-12">
+        <div class="container mx-auto">
+            <h2 class="font-medium my-5">Popular Courses</h2>
+
+            <div id="popular-course">
+                <div class="carosel-item group">
+                    <div
+                        class="border border-gray-100 shadow-sm rounded mr-3 transition hover:shadow-md group-hover:opacity-75">
+                        <img src="./images/course1.png" alt="" class="w-full rounded rounded-r-none">
+                    </div>
+                </div>
+                <div class="carosel-item group">
+                    <div
+                        class="border border-gray-100 shadow-sm rounded mr-3 transition hover:shadow-md group-hover:opacity-75">
+                        <img src="./images/course1.png" alt="" class="w-full rounded rounded-r-none">
+                    </div>
+                </div>
+                <div class="carosel-item group">
+                    <div
+                        class="border border-gray-100 shadow-sm rounded mr-3 transition hover:shadow-md group-hover:opacity-75">
+                        <img src="./images/course1.png" alt="" class="w-full rounded rounded-r-none">
+                    </div>
+                </div>
+                <div class="carosel-item group">
+                    <div
+                        class="border border-gray-100 shadow-sm rounded mr-3 transition hover:shadow-md group-hover:opacity-75">
+                        <img src="./images/course1.png" alt="" class="w-full rounded rounded-r-none">
+                    </div>
+                </div>
+                <div class="carosel-item group">
+                    <div
+                        class="border border-gray-100 shadow-sm rounded mr-3 transition hover:shadow-md group-hover:opacity-75">
+                        <img src="./images/course1.png" alt="" class="w-full rounded rounded-r-none">
+                    </div>
+                </div>
+                <div class="carosel-item group">
+                    <div
+                        class="border border-gray-100 shadow-sm rounded mr-3 transition hover:shadow-md group-hover:opacity-75">
+                        <img src="./images/course1.png" alt="" class="w-full rounded rounded-r-none">
+
+                        <div class="mt-3 p-3">
+                            <div class="flex justify-between">
+                                <div>
+                                    <span class="bg-[#FFE7D2] text-[#FF8D3F] p-2 rounded text-[10px] font-bold">
+                                        Python
+                                    </span>
+                                </div>
+                                <div>
+                                    <span class="text-green-600 font-bold">
+                                        $2,000
+                                    </span>
+                                </div>
+
+                                
+                            </div>
+                            <div class="mt-4 mb-4 text-xs">
+                                <h2 class="text-base mt-3 font-medium">
+                                    Complete Python Bootcamp from Zero to hero in Python
+                                </h2>
+                                <p class="text-gray-400 mt-2">
+                                    32 Lesson
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+    <!-- End polular course -->
+
+    <!-- new course start -->
+    <section>
+
+    </section>
+    <!-- End new course -->
+
+    <!-- footer start -->
+    <footer>
+
+    </footer>
+    <!-- End footer -->
+    <!-- 
+jquery js -->
+
+    <script src="./vendors/jquery/jquery-3.6.0.min.js"></script>
+
+    <script src="./js/main.js"></script>
+
+    <!-- slick js -->
+    <script src="./vendors/slick/slick.min.js"></script>
+</body>
+
+</html>
