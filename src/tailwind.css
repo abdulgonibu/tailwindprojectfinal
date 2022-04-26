@@ -41,4 +41,23 @@
         font-family: "Font Awesome 6 Free";
         font-weight: 900;
       }
+
+      /* .mobile-navbar {
+        width: 0px;
+        height: 102vh;
+        background: #fff;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        text-align: left;
+        box-shadow: 10px 10px 20px #8080805e;
+        overflow-y: auto;
+        transition: .5s all;
+    }
+
+    .mobile-navbar-sidebar-open {
+        width: 300px;
+    } */
+
+   
 }

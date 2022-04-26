@@ -1,6 +1,5 @@
 $(document).ready(function(){
     $('#popular-course, #new-course').slick({
-        
             dots: true,
             infinite: false,
             speed: 300,
@@ -35,5 +34,31 @@ $(document).ready(function(){
               // instead of a settings object
             ]
           });
-    
+
+     /*********************************************
+  *  Navbar Responsive
+  /*********************************************/
+  $(".mobile-navbar").removeClass("hidden");
+  $(".mobile-navbar").hide();
+
+  $(".navbar-toggle").on("click", function() {
+    $(".mobile-navbar").toggle("slide");
+    $("#toggle-icon").toggleClass("fa-times");
   });
+
+  $(window).click(function() {
+    $(".mobile-navbar").hide("slide");
+    $("#toggle-icon").addClass("fa-bars-staggered");
+    $("#toggle-icon").removeClass("fa-times");
+  });
+
+  $(".navbar-toggle").on("click", function(event) {
+    event.stopPropagation();
+  });
+
+  $(".mobile-navbar").on("click", function(event) {
+    event.stopPropagation();
+  });
+
+});
+ 
